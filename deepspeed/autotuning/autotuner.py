@@ -24,11 +24,11 @@ try:
 except ImportError:
     tabulate = None
 
-try:
-    import mlflow
-    has_mlflow = True
-except Exception as e:
-    has_mlflow = False
+# try:
+#     import mlflow
+#     has_mlflow = True
+# except Exception as e:
+has_mlflow = False
 
 ZERO_OPTIMIZATION_STAGE = "stage"
 OFFLOAD_OPTIMIZER = "offload_optimizer"
